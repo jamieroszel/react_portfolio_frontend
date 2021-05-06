@@ -2,7 +2,7 @@ import './App.css';
 
 // Import Components
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import StickyFooter from "./components/StickyFooter";
 import { Route, Switch} from "react-router-dom";
 
 // IMPORT PAGES
@@ -29,7 +29,7 @@ function App() {
           <About URL={URL} />
         </Route>
       </Switch>
-      <Footer />
+      <StickyFooter />
     </div>
   );
 }

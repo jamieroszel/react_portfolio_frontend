@@ -1,3 +1,4 @@
+import { NONAME } from "node:dns";
 import { Link } from "react-router-dom";
 
 function Header(props) {
@@ -9,6 +10,7 @@ function Header(props) {
         padding: "8px",
         width: "90%",
         margin: "auto",
+        textDecoration: "none"
     };
 
     return (

@@ -18,7 +18,8 @@ function Projects(props) {
     useEffect(() => getProjectsData(), []);
 
     // define a function that will return the JSX needed once we get the data
-    const loaded = () => (
+    const loaded = () => {
+        return projects.map((project) => (
         <div>
             <h1>{project.name}</h1>
             <img src={project.image} alt=""/>
@@ -29,7 +30,8 @@ function Projects(props) {
                 <button>Live Site</button>
             </a>
         </div>
-    )
+    ))
+    }
 
     // if data arrives return the result of loaded, if not, an h1 that says loading
     return projects ? loaded() : <h1>Loading...</h1>;

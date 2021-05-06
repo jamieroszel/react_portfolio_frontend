@@ -1,5 +1,6 @@
 import { NONAME } from "node:dns";
 import { Link } from "react-router-dom";
+import HomeIcon from '@material-ui/icons/Home';
 
 function Header(props) {
     // inline style for the nav tag
@@ -18,7 +19,9 @@ function Header(props) {
             <h1>My Portfolio Page</h1>
             <nav style ={navStyle}>
                 <Link to="/">
-                    <div>Home</div>
+                    <div>
+                    <HomeIcon />    
+                    Home</div>
                 </Link>
                 <Link to="/about">
                     <div>About</div>
